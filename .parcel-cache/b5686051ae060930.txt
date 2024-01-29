@@ -1,4 +1,4 @@
-4545
+4547
 96D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\escape-string-regexp\readme.md133501105780670000 0
 65D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\package.json133507621201335384 0
 103D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\runtime-js\src\helpers\worker133507620506251806 1
@@ -13,7 +13,7 @@
 63D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\.gitignore133507622730150010 0
 78D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\cli-progress133507620475560137 1
 90D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\dotenv-expand\index.d.ts133501105584610000 0
-57D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist133507641976205092 1
+57D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist133509618044870633 1
 123D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\src\_create_for_of_iterator_helper_loose.mjs133501105626210000 0
 84D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\utility-types\dist133507620497774567 1
 118D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\lmdb\node_modules\node-addon-api\tools\check-napi.js133501105632570000 0
@@ -61,7 +61,7 @@
 91D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\posthtml-render\readme.md133501105635060000 0
 74D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\entities133507620475860147 1
 129D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\sample-mdb.txt133501105614930000 0
-67D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\index.html133507633139716590 0
+67D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\index.html133509617319484323 0
 100D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\lmdb\dependencies\lz4\lib\xxhash.h133501105614930000 0
 116D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\esm\_tagged_template_literal_loose.js133501105626210000 0
 111D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\packager-js\src\GlobalOutputFormat.js133501105599690000 0
@@ -69,7 +69,7 @@
 94D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\watcher\package.json133501105611130000 0
 80D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\dom-serializer133507620476070146 1
 131D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\library-custom-scopehoist\package.json133501105572800000 0
-65D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\index.ts133507627750113372 0
+65D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\index.ts133509618043955315 0
 98D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\update-browserslist-db\README.md133501105616560000 0
 74D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\css-what133507620475660149 1
 87D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\domutils\lib\feeds.js133501105744090000 0
@@ -86,7 +86,7 @@
 88D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\logger\LICENSE133501105572790000 0
 98D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\lmdb\dependencies\lmdb\libraries133507620474980130 1
 90D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\htmlparser2\lib\index.js133501105776820000 0
-65D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\state.ts133507627620161031 0
+65D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\state.ts133508566372195647 0
 90D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\term-size\vendor\windows133507620505861833 1
 102D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\caniuse-lite\data\features\srcset.js133507620348720000 0
 123D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\workers\test\integration\workerfarm\master-sum.js133501105586460000 0
@@ -95,14 +95,14 @@
 74D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\argparse133507620475380122 1
 123D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\node-releases\data\release-schedule\release-schedule.json133501105623500000 0
 92D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\domutils\lib\querying.d.ts133501105744090000 0
-67D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\styles.css133507641975873020 0
+67D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\styles.css133509604765812140 0
 102D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\source-map\dist\SourceMap.js133501105582800000 0
 84D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\fs\LICENSE133501105572820000 0
 82D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\stable\stable.js133501105657110000 0
 88D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\picomatch\package.json133501105667260000 0
 83D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@msgpackr-extract133507620463698952 1
 100D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\graph\src\shared-buffer.js133501105582410000 0
-81D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\components\add-item-form133507641641335720 1
+81D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\components\add-item-form133509617840179143 1
 109D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\caniuse-lite\data\features\dispatchevent.js133507620348720000 0
 98D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\react-error-overlay\lib\index.js133501105625950000 0
 77D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\cosmiconfig133507620507941825 1
@@ -116,7 +116,7 @@
 87D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\components\items-list\index.ts133507641690159721 0
 89D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\semver\functions\cmp.js133501105583810000 0
 74D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\boolbase133507620475420119 1
-90D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\components\add-item-form\index.ts133507643357642181 0
+90D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\src\components\add-item-form\index.ts133509617705323041 0
 71D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\chalk133507620475480135 1
 98D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\postcss-value-parser\lib\unit.js133501105630360000 0
 121D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\lmdb\node_modules\.bin\node-gyp-build-optional-packages133507620508071810 0
@@ -2263,6 +2263,7 @@
 95D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\entities\lib\maps\legacy.json133501105779740000 0
 107D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\custom-targets133507620506171849 1
 92D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\entities\lib\maps\xml.json133501105779740000 0
+80D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.d8f2ec4f.css.map133509616572125282 0
 110D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\entities\lib\generated\decode-data-html.d.ts133501105779740000 0
 100D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\css-tree\lib\syntax\pseudo\lang.js133501105651950000 0
 114D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\entities\lib\generated\decode-data-html.d.ts.map133501105779740000 0
@@ -3549,7 +3550,7 @@
 105D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\_\_interop_require_default133507620505661824 1
 106D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\_\_interop_require_wildcard133507620505661824 1
 100D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\_\_is_native_function133507620505661824 1
-80D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.4d663569.css.map133507641976205092 0
+80D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.4d663569.css.map133509617734234626 0
 109D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\_\_is_native_reflect_construct133507620505661824 1
 101D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\_\_non_iterable_spread133507620505681838 1
 109D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@swc\helpers\_\_async_iterator\package.json133501105626210000 0
@@ -4266,7 +4267,7 @@
 112D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\src\requests\ValidationRequest.js133501105572800000 0
 104D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\main-global133507620506201815 1
 101D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\main-mjs133507620506191804 1
-79D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.b71e74eb.js.map133507637327674298 0
+79D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.b71e74eb.js.map133509618044860631 0
 104D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\module-b.js133501105572800000 0
 99D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\parcel133507620506201815 1
 100D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\@parcel\core\test\fixtures\plugins133507620506201815 1
@@ -4541,6 +4542,7 @@
 81D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\.bin\semver.cmd133507620508671816 0
 75D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\.bin\svgo133507620508701803 0
 93D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\node_modules\.bin\update-browserslist-db133507620508721809 0
-76D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.4d663569.css133507641976195084 0
-75D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.b71e74eb.js133507637327644319 0
-68D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.html133507637328014295 0
+76D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.4d663569.css133509617734214637 0
+75D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.b71e74eb.js133509618044830612 0
+76D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.d8f2ec4f.css133509616572105271 0
+68D:\Apx\NIVEL-2\arquitectura-web\ejercicio-to-do-list\dist\index.html133509617734555303 0
