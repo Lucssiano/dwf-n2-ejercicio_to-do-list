@@ -10,6 +10,7 @@ export const state = {
 		// modifica this.data (el state) e invoca los callbacks
 		this.data = newState;
 		this.listeners.forEach((callback) => callback()); // no se si es necesario el parametro newState en el callback
+		console.log('la data', this.data);
 	},
 	subscribe(callback: (any) => any) {
 		// recibe callbacks para ser avisados posteriormente
@@ -18,9 +19,14 @@ export const state = {
 	},
 	addItem(item) {
 		// suma el nuevo item a la lista
-		this.data.list.push(item);
+		const currentState = this.getState();
+		currentState.list.push(item);
+		this.setState(currentState);
 	},
 	removeItem(item) {
-		this.data.list = this.data.list.filter((el) => el !== item);
+		const currentState = this.getState();
+		const newList = currentState.list.filter((el) => el !== item);
+		currentState.list = newList;
+		this.setState(currentState);
 	},
 };

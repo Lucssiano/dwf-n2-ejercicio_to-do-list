@@ -1,25 +1,35 @@
 import { state } from '../../state';
 
-export function initList() {
-	class itemsList extends HTMLElement {
-		constructor() {
-			super();
-		}
-		render() {
-			const shadow = this.attachShadow({ mode: 'open' });
+class itemsList extends HTMLElement {
+	shadow = this.attachShadow({ mode: 'open' });
 
-			const divRoot = document.createElement('div');
-			divRoot.classList.add('list-item-container');
+	constructor() {
+		super();
+	}
 
-			const itemListText = this.getAttribute('text');
+	connectedCallback() {
+		state.subscribe(() => {
+			this.render();
+		});
+	}
 
-			divRoot.innerHTML = `
-				<div class="list-square"></div>
-				<div class="list-item">${itemListText}</div>
+	render() {
+		const list = state.getState().list;
+
+		this.shadow.innerHTML = `${list
+			.map((item) => {
+				return ` 
+				<div class="list-item-container">
+					<div class="list-square"></div>
+					<span class="item">${item}</span>	
+				</div>
 			`;
+			})
+			.join('')}
+		`;
 
-			const style = document.createElement('style');
-			style.innerHTML = `
+		const style = document.createElement('style');
+		style.innerHTML = `
 			.list-item-container {
 				border-bottom: 2px solid #000;
 				display: flex;
@@ -38,15 +48,17 @@ export function initList() {
 			}
 			`;
 
-			const listSquare = divRoot.querySelector('.list-square');
-			listSquare?.addEventListener('click', () => {
-				state.removeItem(this);
-				this.remove();
+		const listSquare = this.shadow.querySelectorAll('.list-square');
+		listSquare?.forEach((square) => {
+			square.addEventListener('click', () => {
+				(square?.parentNode as Element)?.remove();
+				const itemToRemove = square?.nextElementSibling?.textContent;
+				state.removeItem(itemToRemove);
 			});
+		});
 
-			shadow.appendChild(divRoot);
-			shadow.appendChild(style);
-		}
+		this.shadow.appendChild(style);
 	}
-	customElements.define('items-list', itemsList);
 }
+
+customElements.define('items-list', itemsList);
