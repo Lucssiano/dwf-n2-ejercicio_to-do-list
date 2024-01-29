@@ -579,17 +579,19 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"h7u1C":[function(require,module,exports) {
+// import { state } from './state';
 var _addItemForm = require("./components/add-item-form");
+var _itemsList = require("./components/items-list");
 (function main() {
-    // initList();
+    (0, _itemsList.initList)();
     (0, _addItemForm.initForm)();
 })();
 
-},{"./components/add-item-form":"74gDE"}],"74gDE":[function(require,module,exports) {
-// import { state } from '../../state';
+},{"./components/add-item-form":"74gDE","./components/items-list":"KaKew"}],"74gDE":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initForm", ()=>initForm);
+var _state = require("../../state");
 function initForm() {
     class ItemForm extends HTMLElement {
         constructor(){
@@ -600,11 +602,10 @@ function initForm() {
             const shadow = this.attachShadow({
                 mode: "open"
             });
-            const form = document.createElement("form");
-            form.classList.add("to-do-list-form");
-            form.innerHTML = `
+            const divRoot = document.createElement("div");
+            divRoot.innerHTML = `
       <form class="to-do-list-form">
-        <input type="text" name="item" placeholder="Agreg\xe1 un item" class="form__input"/>
+        <input type="text" name="item" placeholder="Agreg\xe1 un item" class="form__input" required/>
         <button type="submit" class="form__button">+</button>
       </form>
       `;
@@ -631,19 +632,40 @@ function initForm() {
         }
       }
       `;
-            const formEl = form.querySelector(".to-do-list-form");
-            formEl?.addEventListener("click", (event)=>{
-                event.preventDefault();
-            // agregar funcionalidad
+            const listContainer = document.querySelector(".to-do-list-box");
+            const formEl = divRoot.querySelector(".to-do-list-form");
+            formEl?.addEventListener("submit", (e)=>{
+                e.preventDefault();
+                const form = e.target;
+                const inputText = form.item.value;
+                if (listContainer && listContainer.childElementCount <= 5) {
+                    const newItem = document.createElement("items-list");
+                    newItem.setAttribute("text", inputText);
+                    newItem.render();
+                    listContainer?.appendChild(newItem);
+                    (0, _state.state).addItem(newItem);
+                    const lastState = (0, _state.state).getState();
+                    (0, _state.state).setState({
+                        ...lastState,
+                        list: [
+                            ...lastState.list
+                        ]
+                    });
+                } else alert("No se pueden agregar m\xe1s de 6 items");
+                form.reset();
             });
-            shadow.appendChild(form);
+            (0, _state.state).subscribe(()=>{
+                const newState = (0, _state.state).getState();
+                console.log("este es el listener", newState);
+            });
+            shadow.appendChild(divRoot);
             shadow.appendChild(style);
         }
     }
     customElements.define("add-item-form", ItemForm);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../state":"1Yeju"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -673,6 +695,88 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["aHFy6","h7u1C"], "h7u1C", "parcelRequire2452")
+},{}],"1Yeju":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "state", ()=>state);
+const state = {
+    data: {
+        list: []
+    },
+    listeners: [],
+    getState () {
+        return this.data;
+    },
+    setState (newState) {
+        // modifica this.data (el state) e invoca los callbacks
+        this.data = newState;
+        this.listeners.forEach((callback)=>callback()); // no se si es necesario el parametro newState en el callback
+    },
+    subscribe (callback) {
+        // recibe callbacks para ser avisados posteriormente
+        this.listeners.push(callback);
+    /* Se está ejecutando una vez sola (?) */ },
+    addItem (item) {
+        // suma el nuevo item a la lista
+        this.data.list.push(item);
+    },
+    removeItem (item) {
+        this.data.list = this.data.list.filter((el)=>el !== item);
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"KaKew":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initList", ()=>initList);
+var _state = require("../../state");
+function initList() {
+    class itemsList extends HTMLElement {
+        constructor(){
+            super();
+        }
+        render() {
+            const shadow = this.attachShadow({
+                mode: "open"
+            });
+            const divRoot = document.createElement("div");
+            divRoot.classList.add("list-item-container");
+            const itemListText = this.getAttribute("text");
+            divRoot.innerHTML = `
+				<div class="list-square"></div>
+				<div class="list-item">${itemListText}</div>
+			`;
+            const style = document.createElement("style");
+            style.innerHTML = `
+			.list-item-container {
+				border-bottom: 2px solid #000;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				padding: 10px 0;
+				margin-bottom: 15px;
+			}
+			.list-square {
+				width: 30px;
+				height: 30px;
+				border: 1px solid #000;
+			}
+			.list-item {
+				font-size: 18px;
+			}
+			`;
+            const listSquare = divRoot.querySelector(".list-square");
+            listSquare?.addEventListener("click", ()=>{
+                (0, _state.state).removeItem(this);
+                this.remove();
+            });
+            shadow.appendChild(divRoot);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("items-list", itemsList);
+}
+
+},{"../../state":"1Yeju","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aHFy6","h7u1C"], "h7u1C", "parcelRequire2452")
 
 //# sourceMappingURL=index.b71e74eb.js.map

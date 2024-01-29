@@ -30,23 +30,4 @@ body {
   padding: 20px;
 }
 
-.list-item-container {
-  border-bottom: 2px solid #000;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 15px;
-  padding: 10px 0;
-  display: flex;
-}
-
-.list-square {
-  border: 1px solid #000;
-  width: 30px;
-  height: 30px;
-}
-
-.list-item {
-  font-size: 18px;
-}
-
 /*# sourceMappingURL=index.4d663569.css.map */

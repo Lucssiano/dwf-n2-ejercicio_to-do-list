@@ -1,4 +1,4 @@
-// import { state } from '../../state';
+import { state } from '../../state';
 
 export function initForm() {
 	class ItemForm extends HTMLElement {
@@ -9,11 +9,11 @@ export function initForm() {
 		render() {
 			const shadow = this.attachShadow({ mode: 'open' });
 
-			const form = document.createElement('form');
-			form.classList.add('to-do-list-form');
-			form.innerHTML = `
+			const divRoot = document.createElement('div');
+
+			divRoot.innerHTML = `
       <form class="to-do-list-form">
-        <input type="text" name="item" placeholder="Agregá un item" class="form__input"/>
+        <input type="text" name="item" placeholder="Agregá un item" class="form__input" required/>
         <button type="submit" class="form__button">+</button>
       </form>
       `;
@@ -42,13 +42,37 @@ export function initForm() {
       }
       `;
 
-			const formEl = form.querySelector('.to-do-list-form');
-			formEl?.addEventListener('click', (event) => {
-				event.preventDefault();
-				// agregar funcionalidad
+			const listContainer = document.querySelector('.to-do-list-box');
+			const formEl = divRoot.querySelector('.to-do-list-form');
+
+			formEl?.addEventListener('submit', (e: Event) => {
+				e.preventDefault();
+				const form = e.target as HTMLFormElement;
+				const inputText = form.item.value;
+				if (listContainer && listContainer.childElementCount <= 5) {
+					const newItem = document.createElement('items-list') as any;
+					newItem.setAttribute('text', inputText);
+					newItem.render();
+					listContainer?.appendChild(newItem);
+
+					state.addItem(newItem);
+					const lastState = state.getState();
+					state.setState({
+						...lastState,
+						list: [...lastState.list],
+					});
+				} else {
+					alert('No se pueden agregar más de 6 items');
+				}
+				form.reset();
 			});
 
-			shadow.appendChild(form);
+			state.subscribe(() => {
+				const newState = state.getState();
+				console.log('este es el listener', newState);
+			});
+
+			shadow.appendChild(divRoot);
 			shadow.appendChild(style);
 		}
 	}
