@@ -586,6 +586,7 @@ var _addItemForm = require("./components/add-item-form");
 })();
 
 },{"./components/add-item-form":"74gDE"}],"74gDE":[function(require,module,exports) {
+// import { state } from '../../state';
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "initForm", ()=>initForm);
