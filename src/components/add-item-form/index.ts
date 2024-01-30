@@ -56,37 +56,6 @@ class ItemForm extends HTMLElement {
 			}
 			`;
 
-		// const listContainer = document.querySelector('.to-do-list-box');
-		// const formEl = divRoot.querySelector('.to-do-list-form');
-
-		// formEl?.addEventListener('submit', (e: Event) => {
-		// 	e.preventDefault();
-		// 	const form = e.target as HTMLFormElement;
-		// 	const inputText = form.item.value;
-		// 	if (listContainer && listContainer.childElementCount <= 5) {
-		// 		const newItem = document.createElement('items-list') as any;
-		// 		newItem.setAttribute('text', inputText);
-		// 		newItem.render();
-		// 		listContainer?.appendChild(newItem);
-
-		// 		state.addItem(newItem);
-		// 		const lastState = state.getState();
-		// 		state.setState({
-		// 			...lastState,
-		// 			list: [...lastState.list],
-		// 		});
-		// 	} else {
-		// 		alert('No se pueden agregar más de 6 items');
-		// 	}
-		// 	form.reset();
-		// });
-
-		// state.subscribe(() => {
-		// 	const newState = state.getState();
-		// 	console.log('este es el listener', newState);
-		// });
-
-		// shadow.appendChild(divRoot);
 		this.shadow.appendChild(style);
 	}
 }

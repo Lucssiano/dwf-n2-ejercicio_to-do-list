@@ -10,6 +10,7 @@ class itemsList extends HTMLElement {
 	connectedCallback() {
 		state.subscribe(() => {
 			this.render();
+			// entender bien como funca esto
 		});
 	}
 

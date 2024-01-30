@@ -8,6 +8,10 @@
   "source": "./src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --dist-dir build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

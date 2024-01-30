@@ -11,6 +11,7 @@ export const state = {
 		this.data = newState;
 		this.listeners.forEach((callback) => callback()); // no se si es necesario el parametro newState en el callback
 		console.log('la data', this.data);
+		console.log('listeners', this.listeners);
 	},
 	subscribe(callback: (any) => any) {
 		// recibe callbacks para ser avisados posteriormente
